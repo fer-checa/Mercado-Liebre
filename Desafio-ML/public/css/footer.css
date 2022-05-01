@@ -21,3 +21,27 @@
     font-size: 12px;
     text-align: center;
 }
+.tarjeta{
+    margin-bottom: 10px;
+    width: em;
+    color: var(--Azul);
+    display:block;
+    margin: 8px;
+    text-align: center
+}
+.regalo{
+    margin-bottom: 10px;
+    width: em;
+    color: var(--Azul);
+    display:block;
+    margin: 8px;
+    text-align: center
+}
+.icinoSeguridad{
+    margin-bottom: 10px;
+    width: em;
+    color: var(--Azul);
+    display:block;
+    margin: 8px;
+    text-align: center
+}
