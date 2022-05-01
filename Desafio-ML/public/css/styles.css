@@ -26,10 +26,7 @@ body{
     font-family: roboto;
     font-size: 12px;
 }
-header{
-    background-color:var(--Amarillo);
 
-}
 .banner{
     width: 400px;
     margin-top: 5vh;
@@ -38,58 +35,9 @@ header{
     text-align: center;
 
 }
-/* estilos para el MAIN */
-.titular1{
-    font-size: 24px;
-}
-.titular2{
-    font-size: 24px;
-}
-#precios{
-    font-size: 18px;
-}
-#descuentos{
-    font-size: 16px;
-}
-#descripciones{
-    font-size: 16px;
-}
-
-.pago{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-}
-.pagoDescripcion{
-    font-size: 12px;
-    text-align: center;
-}
-.envio{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-}
-.envioDescripcion{
-    font-size: 12px;
-    text-align: center;
-}
-.seguridad{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-}
-.seguridadDescripcion{
-    font-size: 12px;
-    text-align: center;
-}
-.fin-footer{
-    font-size: 12px;
-    text-align: center;
-}
 
 .camioncito{
     font-size: 30px;
     color: var(--Verde);
 }
 
-/* Aqui ira los estilos del FOOTER */

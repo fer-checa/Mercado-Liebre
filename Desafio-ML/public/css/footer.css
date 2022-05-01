@@ -1,0 +1,23 @@
+/* Aqui ira los estilos del FOOTER */
+.envio{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.envioDescripcion{
+    font-size: 12px;
+    text-align: center;
+}
+.seguridad{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.seguridadDescripcion{
+    font-size: 12px;
+    text-align: center;
+}
+.fin-footer{
+    font-size: 12px;
+    text-align: center;
+}

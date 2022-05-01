@@ -1,0 +1,26 @@
+/* estilos para el MAIN */
+.titular1{
+    font-size: 24px;
+}
+.titular2{
+    font-size: 24px;
+}
+#precios{
+    font-size: 18px;
+}
+#descuentos{
+    font-size: 16px;
+}
+#descripciones{
+    font-size: 16px;
+}
+
+.pago{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.pagoDescripcion{
+    font-size: 12px;
+    text-align: center;
+}
