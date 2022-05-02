@@ -1,47 +1,73 @@
 /* Aqui ira los estilos del FOOTER */
-.envio{
+
+/* PAGO */
+
+.pago {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
 }
-.envioDescripcion{
+
+.pagoDescripcion {
     font-size: 12px;
     text-align: center;
+
 }
-.seguridad{
+
+.tarjeta {
+    margin-bottom: 10px;
+    width: em;
+    color: var(--Celeste);
+    display: block;
+    margin: 8px;
+    text-align: center
+}
+
+/* ENVIO */
+.envio {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
 }
-.seguridadDescripcion{
+
+.envioDescripcion {
     font-size: 12px;
     text-align: center;
 }
-.fin-footer{
+
+.regalo {
+    margin-bottom: 10px;
+    width: em;
+    color: var(--Celeste);
+    display: block;
+    margin: 8px;
+    text-align: center
+}
+
+/* SEGURIDAD */
+.seguridad {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.seguridadDescripcion {
     font-size: 12px;
     text-align: center;
 }
-.tarjeta{
+
+.icinoSeguridad {
     margin-bottom: 10px;
     width: em;
-    color: var(--Azul);
-    display:block;
+    color: var(--Celeste);
+    display: block;
     margin: 8px;
     text-align: center
 }
-.regalo{
-    margin-bottom: 10px;
-    width: em;
-    color: var(--Azul);
-    display:block;
-    margin: 8px;
-    text-align: center
+
+/* Fin del FOOTER */
+.fin-footer {
+    font-size: 12px;
+    text-align: center;
 }
-.icinoSeguridad{
-    margin-bottom: 10px;
-    width: em;
-    color: var(--Azul);
-    display:block;
-    margin: 8px;
-    text-align: center
-}
+
