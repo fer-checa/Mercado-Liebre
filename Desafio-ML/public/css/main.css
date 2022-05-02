@@ -1,8 +1,23 @@
 /* Aqui ira los estilos del MAIN */
 
+/* Ajustes para el MAIN */
+.main{
+    width: 90%;
+    padding: 10%;
+    background-color: var(--Gris-claro);
+    box-sizing: border-box; /* asi nunca el elemento  */
+    margin: auto;
+}
+.banner{
+    width: 100px;
+    margin-top: 5vh;
+    margin-left: 8vh;
+    margin-bottom: 4vh;
+    text-align: center;
+    display: block;
+    justify-content: center;
 
-
-
+}
 
 /* TITULARES*/
 .titular1{
@@ -20,4 +35,12 @@
 #descripciones{
     font-size: 16px;
 }
+/* PRODUCTOS */
+.cafetera{
+    
+        display: flex;
+        justify-content: center;
+       }
+
+
 

@@ -14,6 +14,10 @@
 --Gris-claro: #ebebeb;
 --Verde: #39b54a;
 }
+* {
+    box-sizing: border-box; 
+}
+
 .logoMercadoLiebre{
     width: 100px;
     margin-top: 5vh;
@@ -30,18 +34,6 @@ body{
     font-size: 12px;
   
 }
-
-.banner{
-    width: 400px;
-    margin-top: 5vh;
-    margin-left: 8vh;
-    margin-bottom: 4vh;
-    text-align: center;
-    display: block;
-    justify-content: center;
-
-}
-
 .camioncito{
     font-size: 30px;
     color: var(--Verde);
