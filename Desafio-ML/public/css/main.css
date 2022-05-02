@@ -1,4 +1,10 @@
 /* Aqui ira los estilos del MAIN */
+
+
+
+
+
+/* TITULARES*/
 .titular1{
     font-size: 24px;
 }
@@ -15,12 +21,3 @@
     font-size: 16px;
 }
 
-.pago{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-}
-.pagoDescripcion{
-    font-size: 12px;
-    text-align: center;
-}
