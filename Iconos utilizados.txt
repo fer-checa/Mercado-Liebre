@@ -1,0 +1,13 @@
+Iconos utilizados
+
+Icono tarjeta:
+
+<i class="fa-solid fa-credit-card"></i>
+
+Icono seguridad:
+
+<i class="fa-solid fa-user-shield"></i>
+
+Icono regalo:
+
+<i class="fa-solid fa-gift"></i>
