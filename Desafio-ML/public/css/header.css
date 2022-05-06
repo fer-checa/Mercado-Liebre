@@ -2,7 +2,7 @@
 
 header {
     background-color: var(--Amarillo);
-    width: 90vh;
+    width: 90%;
     margin: auto;
     
 
@@ -31,5 +31,8 @@ header {
 /* Aqui sacamos los itemns de delante de las listas */
 ul {
     list-style: none;
+}
+.compraCuotas{
+    text-align: center;
 }
 
