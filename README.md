@@ -1,2 +1,2 @@
 # Mercado-Liebre
-Se trata de un proyecto integrador, en el cual se ve toda la parte de diseño de una pag web. Se trabaja HTML y CSS.-
+It is an integrative project, in which the entire design part of a web page is seen. HTML and CSS are worked on.-
