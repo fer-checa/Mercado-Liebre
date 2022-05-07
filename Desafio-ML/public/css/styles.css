@@ -17,26 +17,11 @@
 * {
     box-sizing: border-box; 
 }
-
-.logoMercadoLiebre{
-    width: 100px;
-    margin-top: 5vh;
-    margin-right: 8vh;
-    margin-bottom: 4vh;
-    margin: auto;
-    
-    
-       
-}
-
 body{
     
     font-family: roboto;
     font-size: 12px;
   
 }
-.camioncito{
-    font-size: 30px;
-    color: var(--Verde);
-}
+
 

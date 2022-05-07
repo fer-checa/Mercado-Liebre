@@ -11,7 +11,14 @@ header {
 header {
     display: block;
 }
-
+.logoMercadoLiebre{
+   
+    
+    width: 300px;
+    margin-left: 2em;
+    margin-top: 1em;
+    
+}
 /* aqui le damos el formato al icono burger, que son las tres linias horizontales blancas */
 .menuburger {
     text-align: center;
@@ -31,10 +38,10 @@ header {
 /* Aqui sacamos los itemns de delante de las listas */
 ul {
     list-style: none;
+    padding-left: 15px; 
 }
 .compraCuotas{
     text-align: right;
     
-
 }
 
