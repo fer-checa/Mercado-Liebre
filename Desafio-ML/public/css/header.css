@@ -42,5 +42,7 @@ header {
 ul {
     list-style: none;
     padding-left: 15px;
+    justify-content: flex-end;
+    margin-left: 10px;
     
 } 
