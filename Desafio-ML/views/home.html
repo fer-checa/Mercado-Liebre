@@ -30,11 +30,19 @@
 <body>
 
     <!-- Aqui ira el HEADER -->
+
     <header>
 
+        <!-- LOGO MERCADO LIEBRE -->
         <img class="logoMercadoLiebre" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liabre">
 
-        <p><i class="fa-solid fa-magnifying-glass"></i> Buscar productos, marcas</p>
+        <!-- FORMULARIO CON EL IMPUT PARA EL BUSCADOR -->
+        <form action="#">
+            <imput type="text" >Buscar productos, marcas y mas</imput>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form> 
+        
+
         <div class="compraEnCuotas">
             <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</p>
 
@@ -61,25 +69,23 @@
             <i class="fa-solid fa-bars"></i>
         </div>
 
-       <!-- AQUI VA EL BANNER -->
-     <div>
-        <img class="banner" src="/images/img-home-banner.jpg" alt="home-banner">
-    </div>
-
     </header>
-     
+    <!-- AQUI VA EL BANNER -->
+
+    <img class="banner" src="/images/img-home-banner.jpg" alt="home-banner">
 
     <!-- Aqui ira el main -->
     <main class="main">
-        <article>
+        <section>
 
             <p class="titular1">Basado en tu ultima visita</p>
 
-            <div>
+            <nav class="descripcion-producto">
                 <!-- CAFERETA -->
-                <img class="img-cafetera" src="/images/img-cafetera-moulinex.jpg" alt="cafetera-moulinex">
+                <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera-moulinex"
+                    class="foto-producto">
 
-                <div>
+                <div class="detalle-Producto">
 
                     <!-- Aqui va el icono del camioncito -->
                     <div class="camioncito">
@@ -92,116 +98,147 @@
 
                 </div>
 
-            </div>
+            </nav>
             <!-- COMPUTADORA -->
-            <div class="cajaDeProductos">
-                <img class="img-macbook" src="/images/img-macbook-pro-2019.jpg" alt="macbook">
-                <!-- Aqui va el icono del camioncito -->
-                <div class="camioncito">
-                    <i class="fa-solid fa-truck "></i>
+
+            <nav class="descripcion-producto">
+                <img src="/images/img-macbook-pro-2019.jpg" alt="macbook" class="foto-producto">
+
+                <div class="detalle-Producto">
+                    <!-- Aqui va el icono del camioncito -->
+                    <div class="camioncito"><i class="fa-solid fa-truck "></i></div>
+                    <p id="precios">$230.000</p>
+                    <p id="descuentos">20% OFF</p>
+                    <P id="descripciones">MacBook Pro 2019</P>
                 </div>
 
-                <p id="precios">$230.000</p>
-                <p id="descuentos">20% OFF</p>
-                <P id="descripciones">MacBook Pro 2019</P>
+            </nav>
 
-
-            </div>
             <!-- CELULAR -->
-            <div class="cajaDeProductos">
-                <img class="img-samsung-galaxy" src="/images/img-samsung-galaxy-s10.jpg" alt="samsung-galaxy-s10">
-                <!-- Aqui va el icono del camioncito -->
-                <div class="camioncito">
-                    <i class="fa-solid fa-truck "></i>
+
+            <nav class="descripcion-producto">
+                <img src="/images/img-samsung-galaxy-s10.jpg" alt="samsung-galaxy-s10"
+                    class="foto-producto">
+
+                <div class="detalle-Producto">
+
+                    <!-- Aqui va el icono del camioncito -->
+                    <div class="camioncito"><i class="fa-solid fa-truck "></i></div>
+                    <p id="precios">$75.500</p>
+                    <p id="descuentos">10% OFF</p>
+                    <P id="descripciones">Samsung Galaxy S10</P>
+
                 </div>
 
+            </nav>
 
-
-                <p id="precios">$75.500</p>
-                <p id="descuentos">10% OFF</p>
-                <P id="descripciones">Samsung Galaxy S10</P>
-
-            </div>
             <!-- TELEVISION -->
-            <div class="cajaDeProductos">
-                <img class="img-tv-samsung" src="/images/img-tv-samsung-smart.jpg" alt="tv-samsung-smart">
-                <!-- Aqui va el icono del camioncito -->
-                <div class="camioncito">
-                    <i class="fa-solid fa-truck "></i>
+
+            <nav class="descripcion-producto">
+                <img src="/images/img-tv-samsung-smart.jpg" alt="tv-samsung-smart"
+                    class="foto-producto">
+
+                <div class="detalle-Producto">
+
+                    <!-- Aqui va el icono del camioncito -->
+                    <div class="camioncito"><i class="fa-solid fa-truck "></i></div>
+                    <p id="precios">$23.200</p>
+                    <p id="descuentos">5% OFF</p>
+                    <P id="descripciones">SmartTV Samsung 43"</P>
+
                 </div>
 
-                <p id="precios">$23.200</p>
-                <p id="descuentos">5% OFF</p>
-                <P id="descripciones">SmartTV Samsung 43"</P>
+            </nav>
+        </section>
 
-            </div>
-        </article>
 
-        <article>
+        <section>
 
             <p class="titular2">Seccion de Ofertas</p>
-            <!-- CAFETERA -->
-            <div>
-                <img class="img-cafetera" src="/images/img-cafetera-moulinex.jpg" alt="cafetera-moulinex">
-                <!-- Aqui va el icono del camioncito -->
-                <div class="camioncito">
-                    <i class="fa-solid fa-truck "></i>
-                </div>
-                <p id="precios">$6.770</p>
-                <p id="descuentos">40% OFF</p>
-                <P id="descripciones">Cafetera Moulinex</P>
-            </div>
-            <!-- COMPUTADORA -->
-            <div>
-                <img class="img-macbook" src="/images/img-macbook-pro-2019.jpg" alt="macbook">
-                <!-- Aqui va el icono del camioncito -->
-                <div class="camioncito">
-                    <i class="fa-solid fa-truck "></i>
-                </div>
-                <p id="precios">$230.000</p>
-                <p id="descuentos">20% OFF</p>
-                <P id="descripciones">MacBook Pro 2019</P>
-            </div>
-            <!-- CELULAR -->
-            <div>
-                <img class="img-samsung-galaxy" src="/images/img-samsung-galaxy-s10.jpg" alt="samsung-galaxy-s10">
-                <!-- Aqui va el icono del camioncito -->
-                <div class="camioncito">
-                    <i class="fa-solid fa-truck "></i>
-                </div>
-                <p id="precios">$75.500</p>
-                <p id="descuentos">10% OFF</p>
-                <P id="descripciones">Samsung Galaxy S10</P>
-            </div>
-            <!-- TELEVISION -->
-            <div>
-                <img class="img-tv-samsung" src="/images/img-tv-samsung-smart.jpg" alt="tv-samsung-smart">
-                <!-- Aqui va el icono del camioncito -->
-                <div class="camioncito">
-                    <i class="fa-solid fa-truck "></i>
-                </div>
-                <p id="precios">$23.200</p>
-                <p id="descuentos">5% OFF</p>
-                <P id="descripciones">SmartTV Samsung 43"</P>
-            </div>
 
-        </article>
+            <!-- CAFETERA -->
+            <nav class="descripcion-producto">
+                <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera-moulinex"
+                    class="foto-producto">
+
+                <div class="detalle-Producto">
+                    <!-- Aqui va el icono del camioncito -->
+                    <div class="camioncito"><i class="fa-solid fa-truck "></i></div>
+                    <p id="precios">$6.770</p>
+                    <p id="descuentos">40% OFF</p>
+                    <P id="descripciones">Cafetera Moulinex</P>
+                </div>
+            </nav>
+
+            <!-- COMPUTADORA -->
+            <nav class="descripcion-producto">
+                <img src="/images/img-macbook-pro-2019.jpg" alt="macbook" class="foto-producto">
+
+                <div class="detalle-Producto">
+                    <!-- Aqui va el icono del camioncito -->
+                    <div class="camioncito"><i class="fa-solid fa-truck "></i></div>
+                    <p id="precios">$230.000</p>
+                    <p id="descuentos">20% OFF</p>
+                    <P id="descripciones">MacBook Pro 2019</P>
+                </div>
+            </nav>
+
+            <!-- CELULAR -->
+            <nav class="descripcion-producto">
+
+                <img src="/images/img-samsung-galaxy-s10.jpg" alt="samsung-galaxy-s10"
+                    class="foto-producto">
+
+                <div class="detalle-Producto">
+                    <!-- Aqui va el icono del camioncito -->
+                    <div class="camioncito"><i class="fa-solid fa-truck "></i></div>
+                    <p id="precios">$75.500</p>
+                    <p id="descuentos">10% OFF</p>
+                    <P id="descripciones">Samsung Galaxy S10</P>
+
+                </div>
+            </nav>
+
+
+            <!-- TELEVISION -->
+            <nav class="descripcion-producto">
+
+                <img src="/images/img-tv-samsung-smart.jpg" alt="tv-samsung-smart"
+                    class="foto-producto">
+
+
+                <div class="detalle-Producto">
+                    <!-- Aqui va el icono del camioncito -->
+                    <div class="camioncito"><i class="fa-solid fa-truck "></i></div>
+                    <p id="precios">$23.200</p>
+                    <p id="descuentos">5% OFF</p>
+                    <P id="descripciones">SmartTV Samsung 43"</P>
+
+                </div>
+            </nav>
+
+        </section>
 
     </main>
 
-    <!-- Aqui ira el FOOTER -->
+    <!-- Aqui ira el FOOTER -------------------------------------------------------------------------------------->
+
     <footer>
         <article>
+
             <div class="tarjeta">
                 <i class="fa-solid fa-credit-card "></i>
             </div>
+
             <p class="pago">Paga con tarjeta o en efectivo</p>
             <p class="pagoDescripcion">Con Mercado Liebre Cash, tenes cuotas sin interes con tarjeta o efectivo en
                 puntos de pago.
                 ¡Y siempre seguro!</p>
+
         </article>
 
         <article>
+
             <div class="regalo">
                 <i class="fa-solid fa-gift "></i>
             </div>
@@ -211,22 +248,29 @@
                 productos.
                 Es un beneficio de Mercado Puntos.
             </p>
+
         </article>
 
         <article>
+
             <div class="icinoSeguridad">
                 <i class="fa-solid fa-user-shield "></i>
             </div>
+
             <p class="seguridad">Seguridad, de principio a fin</p>
             <p class="seguridadDescripcion"> ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
                 hacer, porque estas siempre proyegi@</p>
+
         </article>
 
         <article>
-            <p class="fin-footer"> Copyright © 1999-2020 MercadoLiebre S.R.L. </p>
+
+            <p class="fin-footer">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+
         </article>
 
     </footer>
+
 </body>
 
 </html>

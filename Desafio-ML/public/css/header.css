@@ -1,24 +1,34 @@
 /* Aqui ira los estilos del HEADER */
 
 header {
-    background-color: var(--Amarillo);
     width: 90%;
     margin: auto;
-    
-
+    background-color: var(--Amarillo);
 }
+
+.banner {
+
+    width: 100%;
+    /* height: 20vw;
+    margin-top: 5vh;
+    margin-left: 8vh;
+    text-align: center;
+    display: block;
+    justify-content: center;
+} */
+}
+
 
 header {
     display: block;
 }
-.logoMercadoLiebre{
-   
-    
+
+.logoMercadoLiebre {
     width: 300px;
     margin-left: 2em;
     margin-top: 1em;
-    
 }
+
 /* aqui le damos el formato al icono burger, que son las tres linias horizontales blancas */
 .menuburger {
     text-align: center;
@@ -32,16 +42,17 @@ header {
     border-radius: 10%;
     padding: 5px;
     text-align: center;
- 
+    margin: auto;
 }
 
 /* Aqui sacamos los itemns de delante de las listas */
 ul {
     list-style: none;
-    padding-left: 15px; 
-}
-.compraCuotas{
-    text-align: right;
-    
+    padding-left: 15px;
 }
 
+.compraCuotas {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}

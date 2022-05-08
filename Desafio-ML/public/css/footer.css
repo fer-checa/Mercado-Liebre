@@ -11,6 +11,7 @@
 .pagoDescripcion {
     font-size: 12px;
     text-align: center;
+    color: var( --Gris-oscuro);
 
 }
 /* ICONO de la TARJETA */
@@ -34,6 +35,7 @@
 .envioDescripcion {
     font-size: 12px;
     text-align: center;
+    color: var( --Gris-oscuro);
 }
 
 /* ICONO del REGALO */
@@ -58,6 +60,7 @@
 .seguridadDescripcion {
     font-size: 12px;
     text-align: center;
+    color: var( --Gris-oscuro);
 }
 
 /* ICONO de SEGURIDAD */
@@ -76,6 +79,8 @@
     font-size: 12px;
     text-align: center;
     margin: 40px;
+    color: var( --Gris-oscuro);
+    opacity: 0.5;
 
 }
 

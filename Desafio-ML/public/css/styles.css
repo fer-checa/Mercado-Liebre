@@ -6,22 +6,22 @@
 @import url(main.css);
 @import url(footer.css);
 
-:root{
---Amarillo: #EAC926;
---Azul: #03264C;
---Celeste: #1259c3;
---Gris-oscuro: #666;
---Gris-claro: #ebebeb;
---Verde: #39b54a;
+:root {
+    --Amarillo: #fff159;
+    /* #EAC926; */
+    --Azul: #252E7C;
+    /* #03264C; */
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
 }
+
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-body{
-    
+
+body {
     font-family: roboto;
     font-size: 12px;
-  
 }
-
-
