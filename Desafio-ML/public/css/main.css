@@ -2,8 +2,8 @@
 
 /* Ajustes para el MAIN */
 .main {
-    width: 90vw;
-    padding: 10%;
+    width: 100vw;
+    padding: 10vw;
     background-color: var(--Gris-claro);
     box-sizing: border-box;
     margin: auto;
@@ -11,20 +11,12 @@
 }
 
 /* TITULARES*/
-.titular1 {
+.titulares {
     font-size: 24px;
     margin-bottom: 20px;
     margin-top: 20px;
     color: var(--Gris-oscuro);
-    text-align: left;
-}
-
-.titular2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    color: var(--Gris-oscuro);
-    text-align: left;
+    text-align: center;
 }
 
 #precios {
@@ -35,7 +27,7 @@
 }
 
 #descuentos {
-    font-size: 12px;
+    font-size: 16px;
     text-align: left;
     margin-top: 1%;
     color: #39b54a;
@@ -63,29 +55,34 @@
 }
 
 /* IMAGENES DE LOS PRODUCTOS */
-.descripcion-producto {
+.producto {
     width: 45%;
     background-color: var(--blanco);
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 
 .foto-producto {
     width: 100%;
-    border-bottom: 1px var(--gris_claro) solid;
+    border: none;
+    background-color: white;
     display: flex;
     justify-content: center;
-    width: 100%;
     padding: 15px;
+    /* text-align: center; */
 }
 .detalle-Producto {
+    width: 100%;
+    border-top: 10px var(--Gris-claro) solid;
     background-color: white;
-/*     margin: auto; */
     margin-bottom: 10px;
-    /* #ebebeb; */
     padding: 15px;
-    width: 45%;
     text-align: left;
-    /* height: auto; */
+    justify-content: center;
+    border-width: 1px;
+  
 }
-
+.section{
+    text-align: center;
+}
