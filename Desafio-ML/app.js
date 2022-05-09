@@ -20,20 +20,20 @@ app.listen(3030, () => {
 });
 
 // Definimos las rutas a los distintos pedidos que nuestro sitio 
-/* app.get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/home.html"));
 });
-app.get('/', (req,res) => {
+app.get('/register', (req,res) => {
     res.sendFile(path.resolve(__dirname, "./views/register.html"));
 });
-app.get('/', (req,res) => {
+app.get('/login', (req,res) => {
     res.sendFile(path.resolve(__dirname, "./views/login.html"));
 });  
- */
+ 
 // NO OLVIDAR LEVANTAR EL PROYECTO CON: npm start
 
 
-app.get('/', (req,res) => {
+/* app.get('/', (req,res) => {
     let htmlPath = path.resolve(__dirname, './views/home.html');
     res.sendFile(htmlPath);
 });
@@ -44,4 +44,4 @@ app.get('/register', (req,res) => {
 app.get('/login', (req,res) => {
     let htmlPath = path.resolve(__dirname, './views/login.html');
     res.sendFile(htmlPath);
-})   
+})   */ 

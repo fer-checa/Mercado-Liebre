@@ -37,11 +37,21 @@
         <img class="logoMercadoLiebre" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liabre">
 
         <!-- FORMULARIO CON EL IMPUT PARA EL BUSCADOR -->
-        <form action="#">
-            <imput type="text"> Buscar productos, marcas y mas</imput>
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </form> 
-        
+
+
+        <form action="/buscar" method="POST">
+
+            <!-- INGRESAR EL USUARIO -->
+            <P>
+                <label></label>
+                <input type="input" placeholder="Buscar productos, marcas">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </P>
+
+
+        </form>
+
 
         <div class="compraCuotas">
             <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</p>
@@ -69,14 +79,86 @@
             <i class="fa-solid fa-bars"></i>
         </div>
 
+
     </header>
+
     <!-- AQUI VA EL BANNER -->
 
-    <img class="banner" src="/images/img-home-banner.jpg" alt="home-banner">
+    <img src="/images/img-home-banner.jpg" alt="home-banner" class="banner">
 
-    <!-- Aqui ira el main -->
     <main class="main">
-        
+
+        <!-- FORMULARIO PARA EL LOGUIN -->
+        <form action="/register" method="POST">
+            <p>Datos del usuario</p>
+            <!-- NOMBRE Y APELLIDO -->
+            <P>
+                <label></label>
+                <input type="input" placeholder="Nombre y Apellido">
+
+            </P>
+            <!-- NOMBRE DEL UDUARIO -->
+            <P>
+                <label></label>
+                <input type="input" placeholder="Nombre de Usuario">
+
+            </P>
+            <!-- E-MAIL -->
+            <P>
+                <label></label>
+                <input type="input" placeholder="E-mail">
+
+            </P>
+            <!-- FECHA DE NACIMIENTO -->
+            <p> Fecha de nacimiento</p>
+
+            <P>
+                <label></label>
+                <input type="date" name="fecha">
+
+            </P>
+            <!-- DOMICILIO -->
+            <P>
+                <label></label>
+                <input type="input" placeholder="Domicilio">
+
+            </P>
+            <!-- FOTO DE USUARIO -->
+            <P>
+                <label> Seleccionar una imagen para el prfil: </label>
+
+                <input type="file" name="avatar" accept=".jpg" multiple>
+
+            </P>
+
+            <!-- PERFIL DEL USUARIO -->
+            <p>Perfil del usuario</p>
+
+            <label> <input type="radio" name="perfil-del-usuario" value="comprador"> Comprador </label>
+            <label> <input type="radio" name="perfil-del-usuario" value="vendedor"> Vendedor </label>
+
+            <!-- INTERESES A SELECCIONAR -->
+            <p>Intereses</p>
+
+            <label> <input type="checkbox" name="intereses" value="electro"> Electro </label>
+
+            <label> <input type="checkbox" name="intereses" value="moda"> Moda </label>
+
+            <label> <input type="checkbox" name="intereses" value="hogar"> Hogar </label>
+
+            <label> <input type="checkbox" name="intereses" value="jugueteria"> Jugueteria </label>
+
+            <label> <input type="checkbox" name="intereses" value="vida-sana"> Vida Sana </label>
+            
+            
+
+
+
+            <!-- BOTON de ENVIO -->
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </form>
 
     </main>
 

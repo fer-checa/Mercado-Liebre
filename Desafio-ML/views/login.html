@@ -37,11 +37,21 @@
         <img class="logoMercadoLiebre" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liabre">
 
         <!-- FORMULARIO CON EL IMPUT PARA EL BUSCADOR -->
-        <form action="#">
-            <imput type="text"> Buscar productos, marcas y mas</imput>
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </form> 
-        
+
+
+        <form action="/buscar" method="POST">
+
+            <!-- INGRESAR EL USUARIO -->
+            <P>
+                <label></label>
+                <input type="input" placeholder="Buscar productos, marcas">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </P>
+
+
+        </form>
+
 
         <div class="compraCuotas">
             <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</p>
@@ -69,32 +79,34 @@
             <i class="fa-solid fa-bars"></i>
         </div>
 
+
     </header>
+
     <!-- AQUI VA EL BANNER -->
 
-    <img class="banner" src="/images/img-home-banner.jpg" alt="home-banner">
+    <img src="/images/img-home-banner.jpg" alt="home-banner" class="banner">
 
     <!-- Aqui ira el main -->
     <main class="main">
-       
+
         <!-- FORMULARIO PARA EL LOGUIN -->
 
-<form action="/login" method="POST" >
-    <!-- INGRESAR EL USUARIO -->
-    <P>
-        <label> Nombre de usuario:</label>
-        <input type="text" name="usuario">
-    </P>
-    <!-- INGRESAR EL EMAIL -->
-    <p>
-    <label> Email:</label>
-    <input type="email" name="email">
-    </p>
-    <!-- BOTON de ENVIO -->
-   <p>
-       <button type="submit">Enviar</button>
-   </p>  
-</form>
+        <form action="/login" method="POST">
+            <!-- INGRESAR EL USUARIO -->
+            <P>
+                <label> Nombre de usuario:</label>
+                <input type="text" name="usuario">
+            </P>
+            <!-- INGRESAR EL EMAIL -->
+            <p>
+                <label> Email:</label>
+                <input type="email" name="email">
+            </p>
+            <!-- BOTON de ENVIO -->
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </form>
 
     </main>
 
