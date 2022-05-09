@@ -5,7 +5,7 @@
     box-sizing: border-box;
  } 
 
-header {
+ .main-header{
     width: 100vw;
     background-color: var(--Amarillo);
 }
@@ -13,8 +13,9 @@ header {
 .compraCuotas {
 
     text-align: center;
+    /* font-weight: 400; */
     padding: 20px;
-    margin: 10px;
+    margin: 10px; 
 }
 
 .banner {
@@ -29,42 +30,41 @@ header {
     margin-top: 1em;
 }
 
-/* aqui le damos el formato al icono burger, que son las tres linias horizontales blancas */
+/* /* aqui le damos el formato al icono burger, que son las tres linias horizontales blancas */
 .menuburger {
     text-align: center;
     font-size: 20px;
     color: var(--Gris-claro);
-}
+} 
 
 /* Aqui le ponemos el estilo al cuadrado de puntas redondas azul */
 .fa-bars {
     background-color: var(--Celeste);
     border-radius: 10%;
-    padding: 5px;
+    padding: 9px;
     text-align: center;
     margin: auto;
-}
-
-/* Aqui sacamos los itemns de delante de las listas */
-ul {
-    list-style: none;
-    margin-left: 10px;
-    text-decoration: none;
-    color: black;
-    margin: 4px;
-    display: flex;
-    font-size: 14px;
-    justify-content: flex-end;
-    justify-content: space-between;
-    align-items: stretch;
-    padding-left: 15px;
-
-}
-.right-navBar {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 70%;
-    flex-direction: row;
 } 
 
 
+/* Aqui sacamos los itemns de delante de las listas */
+/* .main-navbar{
+    display: none;
+}  */
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0; 
+    font-size: 17px;
+}
+@media (min-width: 768px){
+    .main-header{
+        /* border: dotted 5px red; */
+    }
+}
