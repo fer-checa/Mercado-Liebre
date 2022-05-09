@@ -10,13 +10,18 @@
     <title>Mercado Liebre</title>
 
     <!-- Aqui iran los link para GOOGLE Fonts -->
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+        <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+            <enlace
+                href="https: //fonts.googleapis.com/css2? family= Roboto:wght@100;400 & family= Square+Peg & family= Water+Brush & family= Whisper & display=swap"
+                rel="stylesheet">
 
+                <!-- Aqui ira el link para los iconos -->
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+                    rel="stylesheet" />
 
-    <!-- Aqui ira el link para los iconos -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
-
-    <!-- Aqui iran los link para Mi CSS y aqui estan todos mis archivos del CSS-->
-    <link rel="stylesheet" href="/css/styles.css">
+                <!-- Aqui iran los link para Mi CSS y aqui estan todos mis archivos del CSS-->
+                <link rel="stylesheet" href="/css/styles.css">
 
 </head>
 
@@ -25,25 +30,35 @@
 <body>
 
     <!-- Aqui ira el HEADER -->
+
     <header>
 
+        <!-- LOGO MERCADO LIEBRE -->
         <img class="logoMercadoLiebre" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liabre">
 
-        <p><i class="fa-solid fa-magnifying-glass"></i> Buscar productos, marcas</p>
-
-        <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</p>
+        <!-- FORMULARIO CON EL IMPUT PARA EL BUSCADOR -->
+        <form action="#">
+            <imput type="text"> Buscar productos, marcas y mas</imput>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form> 
         
+
+        <div class="compraCuotas">
+            <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</p>
+
+        </div>
+
         <nav>
-            <ul>
-                <li> <a  href="#">Ofertas</a></li>
-                <li> <a  href="#">Tiendas oficiales</a></li>
-                <li> <a  href="#">Vender</a></li>
-                <li> <a  href="#">Ayuda</a></li>
+            <ul class="nav-bar1">
+                <li> <a href="#">Ofertas</a></li>
+                <li> <a href="#">Tiendas oficiales</a></li>
+                <li> <a href="#">Vender</a></li>
+                <li> <a href="#">Ayuda</a></li>
             </ul>
         </nav>
 
         <nav>
-            <ul>
+            <ul class="nav-bar2">
                 <li><a href="/register"> Creá tu cuenta <i class="far fa-id-card"></i></a></li>
                 <li><a href="/login"> Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#"> Mis compras <i class="fas fa-shopping-basket"></i></a></li>
@@ -54,34 +69,53 @@
             <i class="fa-solid fa-bars"></i>
         </div>
 
-        <div class="banner">
-            <img src="/images/img-home-banner.jpg" alt="home-banner">
-        </div>
-
     </header>
+    <!-- AQUI VA EL BANNER -->
+
+    <img class="banner" src="/images/img-home-banner.jpg" alt="home-banner">
 
     <!-- Aqui ira el main -->
     <main class="main">
+       
+        <!-- FORMULARIO PARA EL LOGUIN -->
 
-        <p>AQUI VA LA ETIQUETA!!!!!!!!!!</p>
-      
+<form action="/login" method="POST" >
+    <!-- INGRESAR EL USUARIO -->
+    <P>
+        <label> Nombre de usuario:</label>
+        <input type="text" name="usuario">
+    </P>
+    <!-- INGRESAR EL EMAIL -->
+    <p>
+    <label> Email:</label>
+    <input type="email" name="email">
+    </p>
+    <!-- BOTON de ENVIO -->
+   <p>
+       <button type="submit">Enviar</button>
+   </p>  
+</form>
 
     </main>
 
+    <!-- Aqui ira el FOOTER -------------------------------------------------------------------------------------->
 
-    <!-- Aqui ira el FOOTER -->
     <footer>
-        <section>
+        <article>
+
             <div class="tarjeta">
                 <i class="fa-solid fa-credit-card "></i>
             </div>
+
             <p class="pago">Paga con tarjeta o en efectivo</p>
             <p class="pagoDescripcion">Con Mercado Liebre Cash, tenes cuotas sin interes con tarjeta o efectivo en
                 puntos de pago.
                 ¡Y siempre seguro!</p>
-        </section>
 
-        <section>
+        </article>
+
+        <article>
+
             <div class="regalo">
                 <i class="fa-solid fa-gift "></i>
             </div>
@@ -91,26 +125,29 @@
                 productos.
                 Es un beneficio de Mercado Puntos.
             </p>
-        </section>
 
-        <section>
+        </article>
+
+        <article>
+
             <div class="icinoSeguridad">
                 <i class="fa-solid fa-user-shield "></i>
             </div>
+
             <p class="seguridad">Seguridad, de principio a fin</p>
             <p class="seguridadDescripcion"> ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
                 hacer, porque estas siempre proyegi@</p>
-        </section>
 
-        <section>
-            <p class="fin-footer"> Copyright © 1999-2020 MercadoLiebre S.R.L. </p>
+        </article>
 
-            <p>
+        <article>
 
-            </p>
-        </section>
+            <p class="fin-footer">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+
+        </article>
 
     </footer>
+
 </body>
 
 </html>
