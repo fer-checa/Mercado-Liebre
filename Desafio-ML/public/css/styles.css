@@ -29,7 +29,7 @@ body {
     background-color: var(--gris_claro);
   }
 
-.nav-bar1{
+/* .nav-bar1{
 display: flex;
 flex: row;
 justify-content: flex-start;
@@ -40,4 +40,4 @@ justify-content: flex-start;
     flex: row;
     justify-content: flex-end;
     
-}
+} */

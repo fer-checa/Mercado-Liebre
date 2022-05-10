@@ -1,70 +1,115 @@
 /* Aqui ira los estilos del HEADER */
-*{
-    margin: 0;
-    padding: 0;
+
+* {
     box-sizing: border-box;
- } 
-
- .main-header{
-    width: 100vw;
-    background-color: var(--Amarillo);
-}
-
-.compraCuotas {
-
-    text-align: center;
-    /* font-weight: 400; */
-    padding: 20px;
-    margin: 10px; 
 }
 
 .banner {
-    width:100vw;
+    width: 100vw;
     height: 20%;
-    padding:0%;
-    display:block;
-}
-.logoMercadoLiebre {
-    width: 300px;
-    margin-left: 2em;
-    margin-top: 1em;
+    padding: 0%;
+    display: block;
 }
 
-/* /* aqui le damos el formato al icono burger, que son las tres linias horizontales blancas */
-.menuburger {
-    text-align: center;
-    font-size: 20px;
-    color: var(--Gris-claro);
-} 
+body {
+    font-family: 'Roboto';
+}
 
-/* Aqui le ponemos el estilo al cuadrado de puntas redondas azul */
-.fa-bars {
+.main-header {
+    width: 100vw;
+    background-color: var(--Amarillo);
+    padding: 20px;
+}
+
+.hamburguer-button {
     background-color: var(--Celeste);
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
     border-radius: 10%;
-    padding: 9px;
     text-align: center;
+    font-size: 18px;
     margin: auto;
-} 
+}
 
+.logo {
+    width: 200px;
+}
 
-/* Aqui sacamos los itemns de delante de las listas */
-/* .main-navbar{
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-navbar {
     display: none;
-}  */
+}
+
 .main-navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .main-navbar a {
     text-decoration: none;
     color: #222222;
     display: inline-block;
-    padding: 5px 0; 
+    padding: 5px 0;
     font-size: 17px;
+    margin-top: 15px;
+
 }
-@media (min-width: 768px){
-    .main-header{
-        /* border: dotted 5px red; */
+
+/* MEDIAS QUERIES */
+
+@media (min-width: 769px) {
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10;
     }
+
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+        margin: 0 15px;
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 15px;
+    }
+
+
+}
+
+@media (min-width: 376px) {
+
+    /* .copy-header {
+        font-weight: 400;
+        text-align: center;
+    } */
+
+
+
+
+
+
+
 }
