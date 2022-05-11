@@ -17,11 +17,14 @@
                 rel="stylesheet">
 
                 <!-- Aqui ira el link para los iconos -->
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-                    rel="stylesheet" />
+               <!--  <script src="https://kit.fontawesome.com/e32bldc814.js" crossorigin="anonymous"></script> -->
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" /> 
 
+                <!-- Aqui va el link de NORMALIZE -->
+                <link rel="stylesheet" href="/css/normalize.css">
                 <!-- Aqui iran los link para Mi CSS y aqui estan todos mis archivos del CSS-->
                 <link rel="stylesheet" href="/css/styles.css">
+
 
 </head>
 
@@ -33,36 +36,36 @@
 
     <header class="main-header">
 
-        <!-- LOGO MERCADO LIEBRE -->
-        <img class="logoMercadoLiebre" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liabre">
+        <div class="main-header-top-bar">
 
-        <!-- FORMULARIO CON EL IMPUT PARA EL BUSCADOR -->
+            <!-- LOGO MERCADO LIEBRE -->
+            <img  src="/images/logo-mercado-liebre.svg" class="logo">
+
+            <!-- FORMULARIO CON EL IMPUT PARA EL BUSCADOR -->
 
 
         <form action="/buscar" method="POST">
 
             <!-- INGRESAR EL USUARIO -->
             <P>
-                <label></label>
+                <label> </label>
                 <input type="input" placeholder="Buscar productos, marcas">
-
                 <i class="fa-solid fa-magnifying-glass"></i>
+            
             </P>
 
 
         </form>
 
-
-        <div class="compraCuotas">
-            <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</p>
-
+            <h2 class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i>
+                Compra en cuotas y sin tarjeta de credito</h2>
         </div>
-
-        <div class="menuburger">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
+        <a href="#" class="hamburguer-button" >
+            <i class="fas fa-bars" > </i>
+        </a>
         <nav class="main-navbar">
+
             <ul class="left-navbar">
                 <li> <a href="#">Ofertas</a></li>
                 <li> <a href="#">Tiendas oficiales</a></li>
@@ -77,12 +80,10 @@
             </ul>
         </nav>
 
-        
 
     </header>
 
     <!-- AQUI VA EL BANNER -->
-
     <img src="/images/img-home-banner.jpg" alt="home-banner" class="banner">
 
     <!-- Aqui ira el main -->
@@ -90,22 +91,25 @@
 
         <!-- FORMULARIO PARA EL LOGUIN -->
 
-        <form action="/login" method="POST">
-            <!-- INGRESAR EL USUARIO -->
-            <P>
-                <label> Nombre de usuario:</label>
-                <input type="text" name="usuario">
-            </P>
-            <!-- INGRESAR EL EMAIL -->
-            <p>
-                <label> Email:</label>
-                <input type="email" name="email">
-            </p>
-            <!-- BOTON de ENVIO -->
-            <p>
-                <button type="submit">Enviar</button>
-            </p>
+        <form action="/login" method="post">
+                
+            <div>
+                <label for="nombre-usuario"></label>
+                <input type="text" id="nombre-usuario" name="nombre-usuario" class="input" placeholder="Nombre de Usuari@">
+            </div>
+
+            
+            <div>
+                <label for="password"></label>
+                <input type="password" id="password" name="password" class="input" placeholder="Contraseña">
+            </div>
+
+            
+            <button type="submit" class="enviar-login">Enviar</button>
+            
         </form>
+
+
 
     </main>
 

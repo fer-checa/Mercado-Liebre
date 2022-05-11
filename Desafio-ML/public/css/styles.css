@@ -2,9 +2,9 @@
 
 /* iMPORTAMOS  */
 @import url(normalize.css);
-@import url(header.css);
+/* @import url(header.css); */
 @import url(main.css);
-@import url(footer.css);
+/* @import url(footer.css); */
 
 :root {
     --Amarillo: #fff159;
@@ -21,23 +21,508 @@
     box-sizing: border-box;
 }
 
+/* Aqui va los estilos del BODY */
+
 body {
     margin: auto;
     padding: 0;
     height: 100%;
     font-family: "Roboto", sans-serif;
     background-color: var(--gris_claro);
-  }
+}
 
-/* .nav-bar1{
-display: flex;
-flex: row;
-justify-content: flex-start;
+/* Aqui ira los estilos del HEADER */
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.banner {
+    width: 100vw;
+    height: 20%;
+    padding: 0%;
+    display: block;
+}
+
+.main-header {
+    width: 100vw;
+    background-color: var(--Amarillo);
+    padding: 20px;
+}
+
+.hamburguer-button {
+    background-color: var(--Celeste);
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    margin-top: 15px;
 
 }
-.nav-bar2{
+
+/* Aqui ira los estilos del MAIN */
+
+.main {
+    width: 100vw;
+    padding: 10vw;
+    background-color: var(--Gris-claro);
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+
+/* TITULARES*/
+.titulares {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--Gris-oscuro);
+
+}
+
+#precios {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#descuentos {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 1%;
+    color: #39b54a;
+}
+
+#descripciones {
+    font-size: 16px;
+    text-align: left;
+    color: var(--Gris-oscuro)
+}
+
+/* IMAGEN DEL CAMIONCITO */
+
+.camioncito {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--Verde);
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    color: var(--Verde);
+    position: absolute;
+}
+
+/* IMAGENES DE LOS PRODUCTOS */
+/* mobile 80% tablet 40% desktop 20% width */
+.producto {
+    width: 45%;
+    background-color: var(--blanco);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+.foto-producto {
+    width: 100%;
+    border: none;
+    background-color: white;
     display: flex;
-    flex: row;
-    justify-content: flex-end;
-    
-} */
+    justify-content: center;
+    padding: 15px;
+    /* text-align: center; */
+}
+
+.detalle-Producto {
+    width: 100%;
+    border-top: 10px var(--Gris-claro) solid;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    text-align: left;
+    justify-content: center;
+    border-width: 1px;
+    position: relative;
+}
+
+.section-producto {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* Aqui ira los estilos del FOOTER */
+
+/* PAGO */
+
+.pago {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pagoDescripcion {
+    text-align: center;
+    color: var(--Gris-oscuro);
+    margin-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 10%;
+    font-size: 100%;
+
+}
+
+/* ICONO de la TARJETA */
+.tarjeta {
+    margin-bottom: 10px;
+    width: em;
+    color: var(--Celeste);
+    display: block;
+    margin: 8px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* ENVIO */
+.envio {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.envioDescripcion {
+    text-align: center;
+    color: var(--Gris-oscuro);
+    margin-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 10%;
+    font-size: 100%;
+}
+
+/* ICONO del REGALO */
+.regalo {
+    margin-bottom: 10px;
+    width: em;
+    color: var(--Celeste);
+    display: block;
+    margin: 8px;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+/* SEGURIDAD */
+.seguridad {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.seguridadDescripcion {
+
+    text-align: center;
+    color: var(--Gris-oscuro);
+    margin-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 10%;
+    font-size: 100%;
+}
+
+/* ICONO de SEGURIDAD */
+.icinoSeguridad {
+    margin-bottom: 10px;
+    width: em;
+    color: var(--Celeste);
+    display: block;
+    margin: 8px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Fin del FOOTER */
+.fin-footer {
+    font-size: 12px;
+    text-align: center;
+    margin: 40px;
+    color: var(--Gris-oscuro);
+    opacity: 0.5;
+}
+
+/* FORMATO FORMULARIO *************************************************************++*/
+
+form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    /* background-color: lightgrey; */
+
+    border-radius: 5px;
+}
+
+form label,
+form legend {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 10px;
+    border-radius: 5px;
+
+}
+
+legend h4 {
+    text-align: center;
+}
+
+.fecha {
+    margin-bottom: 1%;
+}
+
+.input {
+    font-size: 80%;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 40%;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.perfil {
+    display: inline-block;
+    margin-top: 2%;
+    width: 5%;
+
+}
+
+.interes {
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.enviar {
+    width: 20%;
+    padding: 15px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: darkblue;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: rgb(58, 58, 234);
+
+}
+
+.enviar-login {
+    width: 40%;
+    padding: 12px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: darkblue;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar-login:hover {
+    background-color: rgb(58, 58, 234);
+}
+
+.borrar {
+    width: 20%;
+    padding: 15px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: rgb(78, 78, 218);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.borrar:hover {
+    background: lightskyblue;
+
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+/* MEDIAS QUERIES **********************************************************************/
+@media (min-width: 376px) {
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .copy-header {
+        max-width: 200px;
+        text-align: right;
+        margin: 0 15px;
+    }
+
+    .fin-footer {
+        margin-bottom: 20px;
+    }
+
+    /* mobile 80% tablet 40% desktop 20% width */
+    .producto {
+        width: 80%;
+        background-color: var(--blanco);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+        margin: 0 15px;
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 15px;
+    }
+
+    .footer-section {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .main-navbar a {
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 17px;
+        margin-top: 15px;
+
+    }
+
+    /* mobile 80% tablet 40% desktop 20% width */
+    .producto {
+        width: 40%;
+        background-color: var(--blanco);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1300px) {
+    .logo {
+        width: 250px;
+    }
+
+    .main-header-top-bar,
+    .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-header-top-bar {
+        align-items: center;
+    }
+
+    .copy-header {
+        margin: 10;
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .main-navbar {
+        margin-top: 40px;
+    }
+
+    .main-navbar li {
+        margin: 0 10px;
+    }
+
+    .main-navbar a {
+        font-size: 19px;
+    }
+
+    /* mobile 80% tablet 40% desktop 20% width */
+    .producto {
+        width: 20%;
+        background-color: var(--blanco);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin: auto;
+    }
+}

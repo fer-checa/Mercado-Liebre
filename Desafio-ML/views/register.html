@@ -17,11 +17,15 @@
                 rel="stylesheet">
 
                 <!-- Aqui ira el link para los iconos -->
+                <!--  <script src="https://kit.fontawesome.com/e32bldc814.js" crossorigin="anonymous"></script> -->
                 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                     rel="stylesheet" />
 
+                <!-- Aqui va el link de NORMALIZE -->
+                <link rel="stylesheet" href="/css/normalize.css">
                 <!-- Aqui iran los link para Mi CSS y aqui estan todos mis archivos del CSS-->
                 <link rel="stylesheet" href="/css/styles.css">
+
 
 </head>
 
@@ -33,43 +37,44 @@
 
     <header class="main-header">
 
-        <!-- LOGO MERCADO LIEBRE -->
-        <img class="logoMercadoLiebre" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liabre">
+        <div class="main-header-top-bar">
 
-        <!-- FORMULARIO CON EL IMPUT PARA EL BUSCADOR -->
+            <!-- LOGO MERCADO LIEBRE -->
+            <img src="/images/logo-mercado-liebre.svg" class="logo">
 
-
-        <form action="/buscar" method="POST">
-
-            <!-- INGRESAR EL USUARIO -->
-            <P>
-                <label></label>
-                <input type="input" placeholder="Buscar productos, marcas">
-
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </P>
+            <!-- FORMULARIO CON EL IMPUT PARA EL BUSCADOR -->
 
 
-        </form>
+            <form action="/buscar" method="POST">
+
+                <!-- INGRESAR EL USUARIO -->
+                <P>
+                    <label> </label>
+                    <input type="input" placeholder="Buscar productos, marcas">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </P>
 
 
-        <div class="compraCuotas">
-            <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</p>
+            </form>
 
+            <h2 class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i>
+                Compra en cuotas y sin tarjeta de credito
+            </h2>
         </div>
-
-        <div class="menuburger">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
+        <a href="#" class="hamburguer-button">
+            <i class="fas fa-bars"> </i>
+        </a>
         <nav class="main-navbar">
+
             <ul class="left-navbar">
                 <li> <a href="#">Ofertas</a></li>
                 <li> <a href="#">Tiendas oficiales</a></li>
                 <li> <a href="#">Vender</a></li>
                 <li> <a href="#">Ayuda</a></li>
             </ul>
-        
+
             <ul class="right-navbar">
                 <li><a href="/register"> Creá tu cuenta <i class="far fa-id-card"></i></a></li>
                 <li><a href="/login"> Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
@@ -77,87 +82,97 @@
             </ul>
         </nav>
 
-        
 
     </header>
 
     <!-- AQUI VA EL BANNER -->
-
     <img src="/images/img-home-banner.jpg" alt="home-banner" class="banner">
 
     <main class="main">
 
-        <!-- FORMULARIO PARA EL LOGUIN -->
-        <form action="/register" method="POST">
-            <p>Datos del usuario</p>
-            <!-- NOMBRE Y APELLIDO -->
-            <P>
-                <label></label>
-                <input type="input" placeholder="Nombre y Apellido">
+        <form action="/register" method="post">
+            <div>
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="nombre" class="input" placeholder="Nombre y Apellido">
+            </div>
 
-            </P>
-            <!-- NOMBRE DEL UDUARIO -->
-            <P>
-                <label></label>
-                <input type="input" placeholder="Nombre de Usuario">
+            <div>
+                <label for="nombre-usuario"></label>
+                <input type="text" id="nombre-usuario" name="nombre-usuario" class="input"
+                    placeholder="Nombre de Usuari@">
+            </div>
 
-            </P>
-            <!-- E-MAIL -->
-            <P>
-                <label></label>
-                <input type="input" placeholder="E-mail">
+            <div>
+                <h6 class="fecha">Fecha de Nacimiento</h6>
+                <label for="fecha-nacimiento"></label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" class="input">
+            </div>
 
-            </P>
-            <!-- FECHA DE NACIMIENTO -->
-            <p> Fecha de nacimiento</p>
+            <div>
+                <label for="domicilio"></label>
+                <input type="text" id="domicilio" name="domicilio" class="input" placeholder="Domicilio">
+            </div>
 
-            <P>
-                <label></label>
-                <input type="date" name="fecha">
+            <div>
 
-            </P>
-            <!-- DOMICILIO -->
-            <P>
-                <label></label>
-                <input type="input" placeholder="Domicilio">
 
-            </P>
-            <!-- FOTO DE USUARIO -->
-            <P>
-                <label> Seleccionar una imagen para el prfil: </label>
+                <label for="perfil">
+                    <h4>Perfil del Usuario</h4>
+                </label>
+                <label for="comprar"><input type="radio" name="perfil" value="Comprador" id="comprar"
+                        class="perfil">Comprador</label>
+                <label for="vender"><input type="radio" name="perfil" value="Vendedor" id="vender"
+                        class="perfil">Vendedor</label>
 
-                <input type="file" name="avatar" accept=".jpg" multiple>
 
-            </P>
-
-            <!-- PERFIL DEL USUARIO -->
-            <p>Perfil del usuario</p>
-
-            <label> <input type="radio" name="perfil-del-usuario" value="comprador"> Comprador </label>
-            <label> <input type="radio" name="perfil-del-usuario" value="vendedor"> Vendedor </label>
-
-            <!-- INTERESES A SELECCIONAR -->
-            <p>Intereses</p>
-
-            <label> <input type="checkbox" name="intereses" value="electro"> Electro </label>
-
-            <label> <input type="checkbox" name="intereses" value="moda"> Moda </label>
-
-            <label> <input type="checkbox" name="intereses" value="hogar"> Hogar </label>
-
-            <label> <input type="checkbox" name="intereses" value="jugueteria"> Jugueteria </label>
-
-            <label> <input type="checkbox" name="intereses" value="vida-sana"> Vida Sana </label>
-            
-            
+            </div>
 
 
 
-            <!-- BOTON de ENVIO -->
-            <p>
-                <button type="submit">Enviar</button>
-            </p>
+            <div class="interes">
+
+
+                <label for="usuario">
+                    <h4>Categorias de Interes</h4>
+                </label>
+
+                <label for="radio-electro"><input type="checkbox" name="electro" value="electro"
+                        id="radio-electro">Electro</label>
+                <label for="radio-moda"><input type="checkbox" name="moda" value="moda" id="radio-moda">Moda</label>
+                <label for="radio-hogar"><input type="checkbox" name="hogar" value="hogar"
+                        id="radio-hogar">Hogar</label>
+                <label for="radio-jugueteria"><input type="checkbox" name="jugueteria" value="jugueteria"
+                        id="radio-jugueteria">Jugueteria</label>
+                <label for="radio-vidasana"><input type="checkbox" name="vidasana" value="Vida Sana"
+                        id="radio-visasana">Vida Sana</label>
+
+
+            </div>
+
+            <div cla>
+                <label for="foto">
+                    <h4>Foto del Usuario</h4>
+                </label>
+                <input type="file" name="foto" id="foto" class="input">
+            </div>
+
+            <div>
+                <label for="password"></label>
+                <input type="password" id="password" name="password" class="input" placeholder="Contraseña">
+            </div>
+
+            <div>
+                <label for="confirm-password"></label>
+                <input type="password" id="confirm-password" name="confirm-password" class="input"
+                    placeholder="Confirmar Contraseña">
+            </div>
+
+            <div class="boton">
+                <button type="submit" class="enviar">Enviar</button>
+                <button type="reset" class="borrar">Borrar formulario</button>
+            </div>
         </form>
+
 
     </main>
 
