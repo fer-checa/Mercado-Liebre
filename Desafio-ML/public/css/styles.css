@@ -124,12 +124,15 @@ body {
     text-align: left;
     margin-top: 1%;
     color: #39b54a;
+    
 }
 
-#descripciones {
+.descripciones {
     font-size: 16px;
     text-align: left;
-    color: var(--Gris-oscuro)
+    color: var(--Gris-oscuro);
+    display: none;
+    
 }
 
 /* IMAGEN DEL CAMIONCITO */
@@ -149,7 +152,7 @@ body {
 }
 
 /* MOVIMIENTO PARA EL CAMIONCITO */
-.envio-camioncito:hover{
+.envio-camioncito:hover {
     transform: rotate(270deg);
 }
 
@@ -161,7 +164,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     margin: auto;
-    
+
 }
 
 .foto-producto {
@@ -171,7 +174,8 @@ body {
     display: flex;
     justify-content: center;
     padding: 15px;
-    text-align: center; /*  */
+    text-align: center;
+    /*  */
     /* flex: row;
     justify-content: flex-end; */
 }
@@ -190,9 +194,8 @@ body {
 
 /* para poner la flexibilidad de cant de prod por pantallas */
 .section-producto {
-display: flex; 
-flex-wrap: wrap;
-
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -412,58 +415,45 @@ main section article {
 }
 
 producto:hover detalle-Producto {
-    display:block
+    display: block
 } 
 
 /* ******** */
 
-.producto:hover{
+.producto:hover {
     box-shadow: 10px 10px 10px rgb(35, 21, 21);
 }
 
-.producto{
+.producto {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     cursor: pointer;
 }
 
 /* VER ESTO QUE QUEDO AL REVEZ */
-#descripciones:hover{
-    font-size: 16px;
-    text-align: left;
-    margin-top: 0%;
-    display: none
-} 
+.descripciones:hover {
+    font-size: 9px;
+    display: block;
+}
 
-producto:hover .descripciones{
-   display: block;
-     }
+.producto:hover .descripciones {
+    display: none;
+}
 
 /* MEDIAS QUERIES **********************************************************************/
 @media (min-width: 376px) {
 
-    .logo {
-        font-size: 1%;
-        display: block;
-    }
-    
     .logo {
         width: 40vw;
         margin-left: 5%;
         margin-top: 0%;
         padding-top: 10px;
         margin-bottom: 10px;
+        font-size: 1%;
+        display: block;
     }
-    
-.producto:hover detalle-Producto {
-        display:block
-    }
- 
- .copy-header {
-    font-weight: 200;
-    text-align: center;
-}
-    main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    .producto:hover detalle-Producto {
+        display: block
     }
 
     .fin-footer {
@@ -494,7 +484,7 @@ producto:hover .descripciones{
 
     .main-header-top-bar {
         display: flex;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         margin-right: 10px;
     }
 
@@ -504,13 +494,13 @@ producto:hover .descripciones{
         margin: 0 15px;
     }
 
-    .logo {
-        width: 150px;
-    }
-    .main-navbar{
+    .main-navbar {
         display: none;
     }
-  
+
+    .descripciones {
+        display: none;
+    }
 }
 
 @media (min-width: 769px) {
@@ -518,8 +508,8 @@ producto:hover .descripciones{
     main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
     .main-header-top-bar {
-        /* display: flex; */
         justify-content: space-between;
         margin-right: 10px;
     }
@@ -574,11 +564,13 @@ producto:hover .descripciones{
     }
 
 }
+
 /* desktop 20% */
- @media (min-width: 1300px) {
+@media (min-width: 1300px) {
     main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
     .logo {
         width: 250px;
     }
@@ -620,4 +612,8 @@ producto:hover .descripciones{
         margin-bottom: 10px;
         margin: auto;
     }
-} 
+
+    .producto:hover .descripciones {
+        display: none;
+    }
+}
