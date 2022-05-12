@@ -415,9 +415,45 @@ producto:hover detalle-Producto {
     display:block
 } 
 
+/* ******** */
+
+.producto:hover{
+    box-shadow: 10px 10px 10px rgb(35, 21, 21);
+}
+
+.producto{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+/* VER ESTO QUE QUEDO AL REVEZ */
+#descripciones:hover{
+    font-size: 16px;
+    text-align: left;
+    margin-top: 0%;
+    display: none
+} 
+
+producto:hover .descripciones{
+   display: block;
+     }
+
 /* MEDIAS QUERIES **********************************************************************/
 @media (min-width: 376px) {
 
+    .logo {
+        font-size: 1%;
+        display: block;
+    }
+    
+    .logo {
+        width: 40vw;
+        margin-left: 5%;
+        margin-top: 0%;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+    
 .producto:hover detalle-Producto {
         display:block
     }
@@ -479,14 +515,6 @@ producto:hover detalle-Producto {
 
 @media (min-width: 769px) {
 
-
-    /* ::placeholder{
-        font-size: 70%
-    }
-
-    .lupita{
-        margin-left: 0%;
-    } */
     main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
