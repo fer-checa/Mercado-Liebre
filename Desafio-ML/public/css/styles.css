@@ -2,9 +2,8 @@
 
 /* iMPORTAMOS  */
 @import url(normalize.css);
-/* @import url(header.css); */
 @import url(main.css);
-/* @import url(footer.css); */
+
 
 :root {
     --Amarillo: #fff159;
@@ -424,6 +423,21 @@ legend h4 {
         margin-bottom: 10px;
         margin: auto;
     }
+
+    .main-header {
+        width: 200vw;
+        background-color: var(--Amarillo);
+        padding: 20px;
+    }
+
+    .banner {
+        width: 150vw;
+        height: 20%;
+        padding: 0%;
+        display: block;
+    }
+
+
 }
 
 @media (min-width: 769px) {
@@ -481,6 +495,7 @@ legend h4 {
         margin-bottom: 10px;
         margin: auto;
     }
+
 }
 
 @media (min-width: 1300px) {
