@@ -2,8 +2,6 @@
 @import url(normalize.css);
 @import url(main.css);
 
-
-
 :root {
     --Amarillo: #fff159;
     /* #EAC926; */
@@ -25,7 +23,7 @@ html {
     background-color: var(--Gris-claro);
 }
 
-/* Aqui va los estilos del BODY */
+/* BODY */
 
 body {
     margin: auto;
@@ -35,16 +33,29 @@ body {
     background-color: var(--gris_claro);
 }
 
-/* Aqui ira los estilos del HEADER */
+/* HEADER */
 
-
+.main-header {
+    width: 100vw;
+    background-color: var(--Amarillo);
+}
 .main-header-top-bar {
     display: flex;
-
     margin-right: 10px;
     flex-wrap: wrap;
 
 }
+.logo-ml{
+    width: 50%; 
+    justify-content: center; 
+    display:flex;
+}
+.logo {
+    width: 100%;
+    padding: 20px;
+}
+
+
 
 .banner {
     width: 100vw;
@@ -54,11 +65,6 @@ body {
 }
 
 
-.main-header {
-    width: 100vw;
-    background-color: var(--Amarillo);
-    /*   padding: 20px; */
-}
 
 .hamburguer-button {
     background-color: var(--Celeste);
@@ -72,10 +78,7 @@ body {
     margin: auto
 }
 
-.logo {
-    width: 100%;
-    padding: 20px;
-}
+
 
 .copy-header {
     width: 100%;
