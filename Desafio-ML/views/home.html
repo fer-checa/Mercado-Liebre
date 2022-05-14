@@ -40,32 +40,42 @@
         <div class="main-header-top-bar">
 
             <!-- LOGO MERCADO LIEBRE -->
-            <img src="/images/logo-mercado-liebre.svg" class="logo">
+            <div class="" style="width: 50%; justify-content: center; display:flex; ">
+                <img src="/images/logo-mercado-liebre.svg" class="logo">
+            </div>
+
 
             <!-- FORMULARIO CON EL IMPUT PARA EL BUSCADOR -->
 
-
-            <form action="/buscar" method="POST">
+            <form action="/buscar" method="POST"
+                style="width:50%; justify-content: flex-start; display:flex; align-items: center;">
 
                 <!-- INGRESAR EL USUARIO -->
-                <P  >
-                    <label> </label>
-                    <input type="input" placeholder="Buscar productos, marcas">
-                    <i class="fa-solid fa-magnifying-glass "></i>
 
-                </P>
+                <input type="input" placeholder="Buscar productos, marcas" style="height: 40px;
+                    padding: 10px;
+                    size: 12px;
+                    width: 90%;
+                    border-radius: 5px;
+                    border: 0;
+                  ">
+                <div style="margin-left: 5px;">
+                    <i class="fa-solid fa-magnifying-glass  "></i>
+                </div>
 
 
             </form>
 
-            <h2 class="copy-header">
+            <div class="copy-header">
                 <i class="fas fa-hand-holding-usd"></i>
                 Compra en cuotas y sin tarjeta de credito
-            </h2>
+            </div>
         </div>
-        <a href="#" class="hamburguer-button">
-            <i class="fas fa-bars"> </i>
-        </a>
+
+        <div href="#" style="padding: 15px;">
+            <i class="fas fa-bars hamburguer-button"> </i>
+        </div>
+
         <nav class="main-navbar">
 
             <ul class="left-navbar">
@@ -89,12 +99,12 @@
     <img src="/images/img-home-banner.jpg" alt="home-banner" class="banner">
 
     <!-- Aqui ira el main -->
-    <main class="main">
+    <main>
 
         <p class="titulares">Basado en tu ultima visita</p>
         <section class="section-producto">
 
-        <!-- article /nav-->
+            <!-- article /nav-->
             <article class="producto">
                 <!-- CAFERETA -->
                 <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera-moulinex" class="foto-producto">
@@ -106,10 +116,14 @@
                         <i class="fa-solid fa-truck envio-camioncito "></i>
                     </div>
 
-                    <p id="precios">$6.770</p>
-                    <p id="descuentos">40% OFF</p>
-                    <P class="descripciones">Cafetera Moulinex</P>
+                    
 
+                    <div style="display: flex;">
+                        <p id="precios">$6.770</p>
+                        <p id="descuentos">40% OFF</p>
+                        
+                    </div>
+                    <P class="descripciones">Cafetera Moulinex</P>
                 </div>
 
             </article>
@@ -121,8 +135,11 @@
                 <div class="detalle-Producto">
                     <!-- Aqui va el icono del camioncito -->
                     <div class="camioncito"><i class="fa-solid fa-truck envio-camioncito"></i></div>
+                    
+                    <div style="display: flex;">
                     <p id="precios">$230.000</p>
                     <p id="descuentos">20% OFF</p>
+                </div>
                     <P class="descripciones">MacBook Pro 2019</P>
                 </div>
 
@@ -166,7 +183,7 @@
         <p class="titulares">Seccion de Ofertas</p>
         <section class="section-producto">
 
-            
+
 
             <!-- CAFETERA -->
             <article class="producto">
