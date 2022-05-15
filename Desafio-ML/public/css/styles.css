@@ -1,4 +1,3 @@
-
 @import url(normalize.css);
 @import url(main.css);
 
@@ -39,23 +38,57 @@ body {
     width: 100vw;
     background-color: var(--Amarillo);
 }
+
 .main-header-top-bar {
     display: flex;
     margin-right: 10px;
     flex-wrap: wrap;
 
 }
-.logo-ml{
-    width: 50%; 
-    justify-content: center; 
-    display:flex;
+
+.logo-ml {
+    width: 50%;
+    justify-content: center;
+    display: flex;
 }
+
 .logo {
     width: 100%;
     padding: 20px;
 }
 
+.buscador {
+    width: 50%;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
 
+.barra-buscador {
+    height: 40px;
+    padding: 10px;
+    size: 12px;
+    width: 90%;
+    border-radius: 5px;
+    border: 0;
+
+}
+.lupa{
+    margin-left: 5px;
+}
+.copy-header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.estyle-botton{
+    padding: 15px;
+}
+.main-navbar {
+    display: none;
+}
 
 .banner {
     width: 100vw;
@@ -79,24 +112,11 @@ body {
 }
 
 
-
-.copy-header {
-    width: 100%;
-
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-}
-
-.main-navbar {
-    display: none;
-}
-
 .main-navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
 .main-navbar a {
@@ -106,6 +126,7 @@ body {
     padding: 5px 0;
     font-size: 17px;
     margin-top: 15px;
+    margin-bottom: 15px;
 
 }
 
@@ -152,7 +173,7 @@ main {
     text-align: left;
     color: var(--Gris-oscuro);
     margin-top: 10px;
-    
+
 
 }
 
@@ -435,6 +456,7 @@ legend h4 {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     cursor: pointer;
 }
+
 .producto:hover {
     box-shadow: 10px 10px 10px rgb(35, 21, 21);
 }
@@ -470,6 +492,27 @@ legend h4 {
 }
 
 @media (min-width: 1024px) {
+    .logo {
+        width: 50%;
+        padding: 20px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .logo-ml {
+        width: 50%;
+        
+        display: flex;
+    }
+    
+    .barra-buscador {
+        height: 40px;
+        padding: 10px;
+        size: 12px;
+        width: 45%;
+        border-radius: 5px;
+        border: 0;
+    
+    }
 
     .producto {
         width: 20%;
@@ -491,9 +534,9 @@ legend h4 {
     }
 
 
-    .producto:hover .descripciones{
+    .producto:hover .descripciones {
         display: block;
     }
 
-    
+
 }
