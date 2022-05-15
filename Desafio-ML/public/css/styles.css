@@ -496,12 +496,11 @@ legend h4 {
         width: 50%;
         padding: 20px;
         margin-top: 15px;
-        margin-left: 15px;
+        
     }
     .logo-ml {
         width: 50%;
-        
-        display: flex;
+       display: flex;
     }
     
     .barra-buscador {
