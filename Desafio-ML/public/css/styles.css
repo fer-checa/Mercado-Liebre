@@ -22,8 +22,6 @@ html {
     background-color: var(--Gris-claro);
 }
 
-/* BODY */
-
 body {
     margin: auto;
     padding: 0;
@@ -31,8 +29,6 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: var(--gris_claro);
 }
-
-/* HEADER */
 
 .main-header {
     width: 100vw;
@@ -71,11 +67,12 @@ body {
     width: 90%;
     border-radius: 5px;
     border: 0;
-
 }
-.lupa{
+
+.lupa {
     margin-left: 5px;
 }
+
 .copy-header {
     width: 100%;
     justify-content: center;
@@ -83,21 +80,6 @@ body {
     display: flex;
 
 }
-.estyle-botton{
-    padding: 15px;
-}
-.main-navbar {
-    display: none;
-}
-
-.banner {
-    width: 100vw;
-    height: 20%;
-    padding: 0%;
-    display: block;
-}
-
-
 
 .hamburguer-button {
     background-color: var(--Celeste);
@@ -111,74 +93,55 @@ body {
     margin: auto
 }
 
+.estyle-botton {
+    padding: 15px;
+}
 
-.main-navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.main-navbar {
+    display: none;
+}
+
+.banner {
+    width: 100vw;
+    height: 20%;
+    padding: 0%;
+    display: block;
+}
+
+.section-producto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: 100%;
+    background-color: var(--blanco);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+.detalle-Producto {
+    width: 100%;
+    border-top: 10px var(--Gris-claro) solid;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: left;
+    justify-content: center;
+    border-width: 1px;
+    position: relative;
+}
+.foto-producto {
+    width: 100%;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
     
 }
-
-.main-navbar a {
-    text-decoration: none;
-    color: #222222;
-    display: inline-block;
-    padding: 5px 0;
-    font-size: 17px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-}
-
-/* Aqui ira los estilos del MAIN */
-
-main {
-    width: 90vw;
-    padding: 10vw;
-    background-color: var(--Gris-claro);
-    box-sizing: border-box;
-    margin: 0 auto;
-
-}
-
-
-/* TITULARES*/
-.titulares {
-    font-size: 24px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    color: var(--Gris-oscuro);
-
-}
-
-#precios {
-    font-size: 18px;
-    text-align: left;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    width: 30%;
-}
-
-#descuentos {
-    font-size: 16px;
-    text-align: right;
-    margin-top: 1%;
-    color: #39b54a;
-    width: 70%;
-
-}
-
-.descripciones {
-    font-size: 16px;
-    text-align: left;
-    color: var(--Gris-oscuro);
-    margin-top: 10px;
-
-
-}
-
-/* IMAGEN DEL CAMIONCITO */
-
 .camioncito {
     display: block;
     font-size: 16px;
@@ -193,57 +156,68 @@ main {
     position: absolute;
 }
 
-/* MOVIMIENTO PARA EL CAMIONCITO */
 .envio-camioncito:hover {
     transform: rotate(270deg);
 }
 
-/* IMAGENES DE LOS PRODUCTOS */
-/* desktop 20% width */
-.producto {
-    width: 100%;
-    background-color: var(--blanco);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: auto;
-
-}
-
-.foto-producto {
-    width: 100%;
-    border: none;
-    background-color: white;
+.precio-descuento{
     display: flex;
-    justify-content: center;
-    padding: 15px;
-    text-align: center;
-    /*  */
-    /* flex: row;
-    justify-content: flex-end; */
 }
-
-.detalle-Producto {
-    width: 100%;
-    border-top: 10px var(--Gris-claro) solid;
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 15px;
+#precios {
+    font-size: 18px;
     text-align: left;
-    justify-content: center;
-    border-width: 1px;
-    position: relative;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 30%;
+}
+#descuentos {
+    font-size: 16px;
+    text-align: right;
+    margin-top: 1%;
+    color: #39b54a;
+    width: 70%;
+
+}
+.descripciones {
+    font-size: 16px;
+    text-align: left;
+    color: var(--Gris-oscuro);
+    margin-top: 10px;
+}
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+main {
+    width: 90vw;
+    padding: 10vw;
+    background-color: var(--Gris-claro);
+    box-sizing: border-box;
+    margin: 0 auto;
+
 }
 
-/* para poner la flexibilidad de cant de prod por pantallas */
-.section-producto {
-    display: flex;
-    flex-wrap: wrap;
+/* FOOTER */
+
+.titulares {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--Gris-oscuro);
 
 }
-
-/* Aqui ira los estilos del FOOTER */
-
-/* PAGO */
 
 .pago {
     font-size: 20px;
@@ -262,7 +236,6 @@ main {
 
 }
 
-/* ICONO de la TARJETA */
 .tarjeta {
     margin-bottom: 10px;
     width: em;
@@ -273,7 +246,6 @@ main {
     font-size: 2em;
 }
 
-/* ENVIO */
 .envio {
     font-size: 20px;
     text-align: center;
@@ -290,7 +262,6 @@ main {
     font-size: 100%;
 }
 
-/* ICONO del REGALO */
 .regalo {
     margin-bottom: 10px;
     width: em;
@@ -302,7 +273,6 @@ main {
 
 }
 
-/* SEGURIDAD */
 .seguridad {
     font-size: 20px;
     text-align: center;
@@ -320,7 +290,6 @@ main {
     font-size: 100%;
 }
 
-/* ICONO de SEGURIDAD */
 .icinoSeguridad {
     margin-bottom: 10px;
     width: em;
@@ -332,6 +301,7 @@ main {
 }
 
 /* Fin del FOOTER */
+
 .fin-footer {
     font-size: 12px;
     text-align: center;
@@ -340,14 +310,12 @@ main {
     opacity: 0.5;
 }
 
-/* FORMATO FORMULARIO *************************************************************++*/
+/* FORMULARIO LOGIN y REGISTER */
 
 form {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    /* background-color: lightgrey; */
-
     border-radius: 5px;
 }
 
@@ -461,7 +429,7 @@ legend h4 {
     box-shadow: 10px 10px 10px rgb(35, 21, 21);
 }
 
-/* MEDIAS QUERIES **********************************************************************/
+/* MEDIAS QUERIES */
 @media (min-width: 768px) {
 
     .producto {
@@ -496,13 +464,17 @@ legend h4 {
         width: 50%;
         padding: 20px;
         margin-top: 15px;
-        
+
     }
+
     .logo-ml {
         width: 50%;
-       display: flex;
+        display: flex;
+        text-align: right;
+        border: red;
+
     }
-    
+
     .barra-buscador {
         height: 40px;
         padding: 10px;
@@ -510,7 +482,7 @@ legend h4 {
         width: 45%;
         border-radius: 5px;
         border: 0;
-    
+
     }
 
     .producto {
@@ -537,5 +509,25 @@ legend h4 {
         display: block;
     }
 
+    .main-header-top-bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .buscador {
+        display: flex;
+        width: 50%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .copy-header {
+        width: 100%;
+        justify-content: right;
+        display: flex;
+        margin-right: 15px;
+    }
 
 }
