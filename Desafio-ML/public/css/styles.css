@@ -44,7 +44,7 @@ body {
 
 .logo-ml {
     width: 50%;
-    justify-content: center;
+    /* justify-content: center; */
     display: flex;
 }
 
@@ -461,7 +461,7 @@ legend h4 {
 
 @media (min-width: 1024px) {
     .logo {
-        width: 50%;
+        width: 75%;
         padding: 20px;
         margin-top: 15px;
 
@@ -471,7 +471,7 @@ legend h4 {
         width: 50%;
         display: flex;
         text-align: right;
-        border: red;
+        text-align: center;
 
     }
 
@@ -520,7 +520,8 @@ legend h4 {
         display: flex;
         width: 50%;
         justify-content: flex-start;
-        align-items: center;
+        
+        
     }
 
     .copy-header {
@@ -528,6 +529,7 @@ legend h4 {
         justify-content: right;
         display: flex;
         margin-right: 15px;
+       
     }
 
 }

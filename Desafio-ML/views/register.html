@@ -9,20 +9,20 @@
     <!-- Titulo que aparecera en el navegador -->
     <title>Mercado Liebre</title>
 
-    <!-- Aqui iran los link para GOOGLE Fonts -->
+    <!-- Link para GOOGLE Fonts -->
     <enlace rel="preconectar" href="https://fonts.googleapis.com">
         <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
             <enlace
                 href="https: //fonts.googleapis.com/css2? family= Roboto:wght@100;400 & family= Square+Peg & family= Water+Brush & family= Whisper & display=swap"
                 rel="stylesheet">
 
-                <!-- Aqui ira el link para los iconos -->
+                <!-- Link para los iconos -->
                 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                     rel="stylesheet" />
 
-                <!-- Aqui va el link de NORMALIZE -->
+                <!-- Link de NORMALIZE -->
                 <link rel="stylesheet" href="/css/normalize.css">
-                <!-- Aqui iran los link para Mi CSS y aqui estan todos mis archivos del CSS-->
+                <!-- Link para Mi CSS y aqui estan todos mis archivos del CSS-->
                 <link rel="stylesheet" href="/css/styles.css">
 
 
@@ -39,30 +39,35 @@
         <div class="main-header-top-bar">
 
             <!-- LOGO MERCADO LIEBRE -->
-            <img src="/images/logo-mercado-liebre.svg" class="logo">
+            <div class="logo-ml">
+                <img src="/images/logo-mercado-liebre.svg" class="logo">
+            </div>
 
-            <!-- FORMULARIO CON EL IMPUT PARA EL BUSCADOR -->
 
+            <!-- Barra con el BUSCADOR -->
 
-            <form action="/buscar" method="POST">
+            <form action="/buscar" method="POST" class="buscador">
 
-                <P>
-                    <label> </label>
-                    <input type="input" placeholder="Buscar productos, marcas">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-
-                </P>
+                <input type="input" placeholder="Buscar productos, marcas" class="barra-buscador">
+                <div class="lupa">
+                    <i class="fa-solid fa-magnifying-glass  "></i>
+                </div>
 
             </form>
 
-            <h2 class="copy-header">
+            <!-- ICINO - COMPRA EN CUOTAS -->
+
+            <div class="copy-header">
                 <i class="fas fa-hand-holding-usd"></i>
                 Compra en cuotas y sin tarjeta de credito
-            </h2>
+            </div>
         </div>
-        <a href="#" class="hamburguer-button">
-            <i class="fas fa-bars"> </i>
-        </a>
+        <!-- BOTON HAMBURGUESA -->
+
+        <div href="#" class="estyle-botton">
+            <i class="fas fa-bars hamburguer-button"> </i>
+        </div>
+
         <nav class="main-navbar">
 
             <ul class="left-navbar">
@@ -178,7 +183,7 @@
 
     <!-- FOOTER -->
 
-    <footer>
+    <footer class="footer-section">
         <article>
 
             <div class="tarjeta">
@@ -186,7 +191,9 @@
             </div>
 
             <p class="pago">Paga con tarjeta o en efectivo</p>
-            <p class="pagoDescripcion">Con Mercado Liebre Cash, tenes cuotas sin interes con tarjeta o efectivo en
+
+            <p class="pagoDescripcion">Con Mercado Liebre Cash,
+                tenes cuotas sin interes con tarjeta o efectivo en
                 puntos de pago.
                 ¡Y siempre seguro!</p>
 
@@ -199,7 +206,10 @@
             </div>
 
             <p class="envio">Envio gratis desde $2.500</p>
-            <p class="envioDescripcion">Solo por estar registrad@ en Mercado Liebre tenes envios gratis en miles de
+
+            <p class="envioDescripcion">
+                Solo por estar registrad@ en
+                Mercado Liebre tenes envios gratis en miles de
                 productos.
                 Es un beneficio de Mercado Puntos.
             </p>
@@ -213,19 +223,22 @@
             </div>
 
             <p class="seguridad">Seguridad, de principio a fin</p>
-            <p class="seguridadDescripcion"> ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+
+            <p class="seguridadDescripcion"> ¿No te gusta?
+                ¡Devolvelo!
+                En Mercado Liebre, no hay nada que no puedas
                 hacer, porque estas siempre proyegi@</p>
 
         </article>
 
-        <article>
 
-            <p class="fin-footer">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-
-        </article>
 
     </footer>
+    <article>
 
+        <p class="fin-footer">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+
+    </article>
 </body>
 
 </html>
